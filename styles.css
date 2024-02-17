@@ -15,7 +15,7 @@ html {
     scroll-behavior: smooth;
 }
 
-p {
+#profile p {
     color: rgb(85, 85, 85);
 }
 
@@ -50,7 +50,7 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: rgb(170, 74, 68);
     text-decoration: underline;
     text-underline-offset: 1rem;
 }
@@ -61,4 +61,275 @@ a:hover {
 
 .logo:hover {
     cursor: default;
+}
+
+/* PROFILE */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.profile-pic {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.profile-text {
+    align-self: center;
+    text-align: center;
+}
+
+.profile-text-1 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICON */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.button {
+    justify-content: center;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: rgb(170, 74, 68);
+    color: white;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/* ABOUT ME */
+
+#about {
+    position: relative;
+}
+
+.section-text-p1 {
+    text-align: center;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+    display: flex;
+    height: 70vh;
+    width: 500px;
+    margin: auto 0;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: (rgb 163 163 163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+/* PROJECTS */
+
+#projects {
+    position: relative;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    color: white;
+}
+
+.text-1 {
+    text-align: center;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+/* CONTACT */
+
+.text-1 {
+    text-align: center;
+}
+
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info p {
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
 }
